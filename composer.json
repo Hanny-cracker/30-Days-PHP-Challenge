@@ -1,0 +1,16 @@
+{
+    "name": "hanniel/30-days-php-challenge",
+    "authors": [
+        {
+            "name": "Hanny-craker",
+            "email": "tembindakwa@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "Core/",
+            "Http\\" : "Http/"
+        }
+    }
+}

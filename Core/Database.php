@@ -1,7 +1,7 @@
 <?php
 
-// namespace Core;
-
+namespace Core;
+use PDO;
 // connet to the database, and execute a query
 class Database
 {
@@ -9,7 +9,7 @@ class Database
     public $connection;
     public $statement;
 
-    function __construct($config, $username = 'root', $password = '')
+    public function __construct($config, $username = 'root', $password = '')
     {
 
         $dsn = 'mysql:' . http_build_query($config, '', ';');
@@ -30,18 +30,18 @@ class Database
         //  :: is call the scope resolution operator to access const value
     }
 
-    function fetchAll()
+    public function fetchAll()
     {
         return $this->statement->fetchAll();
     
     }
 
-    function fetch()
+    public function fetch()
     {
         return $this->statement->fetch();
     }
 
-    function findOrFial(){
+    public function findOrFial(){
 
         $results = $this->statement->fetch();
             if (!$results) {

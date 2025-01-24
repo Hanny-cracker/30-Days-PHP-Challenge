@@ -3,7 +3,7 @@
 namespace Core;
 
 use Core\App; 
-use Database;
+use Core\Database;
 
 class Authenticator
 {

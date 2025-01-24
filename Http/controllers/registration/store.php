@@ -7,9 +7,15 @@ use Http\Forms\LoginForm;
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+<<<<<<< HEAD
 $form = new LoginForm(['email' => $email, 'password' => $password]);
 
 if ($form->validate(['email' => $email, 'password' => $password])) {
+=======
+$form = new LoginForm([$email, $password]);
+
+if ($form->validate([$email, $password])) {
+>>>>>>> tmp
     $db = App::resolve(Database::class);
 
     $user = $db->query('SELECT * FROM user WHERE email = :email', [

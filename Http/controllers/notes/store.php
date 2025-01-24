@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Validator;
 
 $db = App::resolve(Database::class);
 

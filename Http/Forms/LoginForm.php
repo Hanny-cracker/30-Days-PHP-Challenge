@@ -3,7 +3,7 @@
 namespace Http\Forms;
 
 use Core\ValidationEception;
-use Validator;
+use core\Validator;
 
 class LoginForm
 {

@@ -2,7 +2,6 @@
 
 use Core\App;
 use Core\Container;
-
 $container = new Container();
 
 $container->bind('Database', function () {

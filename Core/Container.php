@@ -1,7 +1,6 @@
 <?php
 
 namespace Core;
-
 class Container
 {
     protected $bindings = [];

@@ -25,13 +25,14 @@ class Authenticator
         }
         return false;
     }
-
-    public function login($user)
+ 
+    public function login($user) :bool
     {
         $_SESSION['user'] = [
             'email' => $user['email']
         ];
         session_regenerate_id(true);
+        return true;
     }
 
     public function logout()
